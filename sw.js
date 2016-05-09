@@ -5,7 +5,6 @@ var apiUrl = 'https://api.flickr.com/services/rest/';
 function search(text, opts) {
     var params = {
         method: 'flickr.photos.search',
-        user_id: '142399131@N04',
         extras: 'description',
         format: 'json',
         api_key: apiKey,

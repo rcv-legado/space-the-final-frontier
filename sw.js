@@ -12,7 +12,7 @@ function search(text, opts) {
         license: '4,5,6,7',
         content_type: 1,
         nojsoncallback: 1,
-        per_page: 10
+        per_page: 2
     };
 
     return fetch(apiUrl + '?' + toQuerystring(params), opts).then(function (response) {

@@ -53,10 +53,10 @@ document.getElementById('images').innerHTML = 'Carregando...';
                 }).then(function (event) {
                     console.log('Sync registration successful', event);
                 }).catch(function (error) {
-                    console.log('Sync registration failed', error);
+                    new Notification("Sync registration failed!");
                 });
             } else {
-                console.log("Onw time Sync not supported");
+                new Notification("Onw time Sync not supported");
             }
         });
 
